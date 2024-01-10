@@ -48,7 +48,8 @@ body {
 }
 
 .container {
-  height: 90vh;
+  width: 80vw;
+  margin: 3rem 0;
   padding: 2rem;
   aspect-ratio: 1 / 1;
   border-radius: 10px;
