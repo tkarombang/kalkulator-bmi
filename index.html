@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Kalkulator BMI</title>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <h1>Kalkulator BMI</h1>
+      <form action="#">
+        <div class="hitung-bmi">
+          <div class="gender">
+            <h3>Jenis kelamin</h3>
+            <label for="pria">Pria</label>
+            <input type="radio" name="gender" id="pria" value="pria" checked>
+            <label for="wanita">Wanita</label>
+            <input type="radio" name="gender" id="wanita" value="wanita">
+          </div>
+          <div class="bmi">
+            <h3>Berat Badan (kg)</h3>
+            <input type="number" name="berat" id="berat">
+            <h3>Umur (Tahun)</h3>
+            <input type="number" name="umur" id="umur">
+            <h3>Tinggi Badan (cm)</h3>
+            <input type="number" name="tinggi" id="tinggi">
+          </div>
+          <div class="btn">
+            <button type="submit" class="btn-hitung">Hitung BMI</button>
+            <button type="reset">Reset</button>
+          </div>
+        </div>
+      </form>
+
+      <div class="explanation">
+        <h3>Keunggulan Fitur</h3>
+        <ol>
+          <li>Menghitung Berat Badan</li>
+          <li>Menentukan Kategori Berat Badan Ideal atau Tidak</li>
+          <li>Mempersiapkan Program Penurunan Berat Badan</li>
+        </ol>
+        <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan
+          pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi
+          dengan orang yang memenuhi syarat seperti dokter</p>
+        <p>Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa
+          Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda
+          (dalam meter) atau BMI = Kg/M<sup>2</sup> </p>
+      </div>
+
+      <div class="result">
+        <h3>Berat Badan</h3>
+        <h1 class="result-bmi"></h1>
+        <h4 class="bmi-status"></h4>
+      </div>
+
+    </div>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
